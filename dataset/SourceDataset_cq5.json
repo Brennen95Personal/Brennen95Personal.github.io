@@ -1,0 +1,13 @@
+{
+	"name": "SourceDataset_cq5",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "RestServiceRegres1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "RestResource",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

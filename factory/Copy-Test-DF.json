@@ -1,0 +1,9 @@
+{
+	"name": "Copy-Test-DF",
+	"location": "westus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "efba2afd-0c4f-45b0-ba5d-061ab8cfbf66",
+		"tenantId": "41fa256a-155f-47ff-9e44-fc60e5750b8a"
+	}
+}
