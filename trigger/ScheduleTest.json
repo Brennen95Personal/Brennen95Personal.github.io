@@ -16,7 +16,7 @@
 			"recurrence": {
 				"frequency": "Day",
 				"interval": 1,
-				"startTime": "2023-04-10T09:16:00",
+				"startTime": "2023-04-10T10:00:00",
 				"timeZone": "Pacific Standard Time"
 			}
 		}
