@@ -175,7 +175,7 @@
 				],
 				"typeProperties": {
 					"schema": "dbo",
-					"table": "PleaseWorkDemo"
+					"table": "DuplicatingDataTest2"
 				}
 			},
 			"dependsOn": [

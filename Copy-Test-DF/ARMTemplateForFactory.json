@@ -626,51 +626,56 @@
 								"mappings": [
 									{
 										"source": {
-											"path": "$['data'][0]['id']"
+											"path": "[['id']"
 										},
 										"sink": {
-											"name": "id"
+											"name": "id",
+											"type": "Int64"
 										}
 									},
 									{
 										"source": {
-											"path": "$['data'][0]['name']"
+											"path": "[['name']"
 										},
 										"sink": {
-											"name": "name"
+											"name": "name",
+											"type": "String"
 										}
 									},
 									{
 										"source": {
-											"path": "$['data'][0]['year']"
+											"path": "[['year']"
 										},
 										"sink": {
-											"name": "year"
+											"name": "year",
+											"type": "Int64"
 										}
 									},
 									{
 										"source": {
-											"path": "$['data'][0]['color']"
+											"path": "[['color']"
 										},
 										"sink": {
-											"name": "color"
+											"name": "color",
+											"type": "String"
 										}
 									},
 									{
 										"source": {
-											"path": "$['data'][0]['pantone_value']"
+											"path": "[['pantone_value']"
 										},
 										"sink": {
-											"name": "pantone_value"
+											"name": "pantone_value",
+											"type": "String"
 										}
 									}
 								],
-								"collectionReference": ""
+								"collectionReference": "$['data']"
 							}
 						},
 						"inputs": [
 							{
-								"referenceName": "RestResource3",
+								"referenceName": "RestResource2",
 								"type": "DatasetReference",
 								"parameters": {}
 							}
@@ -691,7 +696,7 @@
 				"annotations": []
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/datasets/RestResource3')]",
+				"[concat(variables('factoryId'), '/datasets/RestResource2')]",
 				"[concat(variables('factoryId'), '/datasets/DelimitedText2')]"
 			]
 		},
@@ -733,7 +738,7 @@
 				],
 				"typeProperties": {
 					"schema": "dbo",
-					"table": "PleaseWorkDemo"
+					"table": "DuplicatingDataTest2"
 				}
 			},
 			"dependsOn": [
@@ -1172,9 +1177,8 @@
 					"recurrence": {
 						"frequency": "Day",
 						"interval": 1,
-						"startTime": "2023-04-10T09:16:00",
-						"timeZone": "Pacific Standard Time",
-						"schedule": {}
+						"startTime": "2023-04-10T10:00:00",
+						"timeZone": "Pacific Standard Time"
 					}
 				}
 			},
